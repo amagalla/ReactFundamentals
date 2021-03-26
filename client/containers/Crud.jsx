@@ -38,8 +38,6 @@ const Crud = () => {
       .catch((err) => console.log(err));
   };
 
-  //   {id: 54, show: "SAO"}
-
   // use effect to get request from database
   useEffect(async () => {
     try {
@@ -64,27 +62,25 @@ const Crud = () => {
   return (
     <>
       <div>
-        {requestedItem.length > 0 ? (
-          <div className='crud_container'>
-            <div className='crud_title'>
-              <h1>Crud App</h1>
-            </div>
-            <div className='form_container'>
-              <form onSubmit={handleSubmit}>
-                <input
-                  type='text'
-                  value={inputItem || ""}
-                  onChange={handleChange}
-                  required
-                />
-                <input type='submit' />
-              </form>
-            </div>
-            <div className='list_data_container'>{resData}</div>
+        (
+        <div className='crud_container'>
+          <div className='crud_title'>
+            <h1>Crud App</h1>
           </div>
-        ) : (
-          <div className='loading_crud'>Loading...</div>
-        )}
+          <div className='form_container'>
+            <form onSubmit={handleSubmit}>
+              <input
+                type='text'
+                value={inputItem || ""}
+                onChange={handleChange}
+                required
+              />
+              <input type='submit' />
+            </form>
+          </div>
+          <div className='list_data_container'>{resData}</div>
+        </div>
+        )
       </div>
     </>
   );
