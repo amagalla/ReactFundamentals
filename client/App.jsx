@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Albums from "./containers/Albums";
 import NavBar from "./components/resuables/Nav";
+import Names from "./containers/Names";
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
           </Route>
           <Route path='/albums'>
             <Albums />
+          </Route>
+          <Route path='/names'>
+            <Names />
           </Route>
         </Switch>
       </Router>

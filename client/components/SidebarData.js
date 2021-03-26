@@ -1,6 +1,7 @@
 import React from "react";
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
+import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
   {
@@ -12,5 +13,10 @@ export const SidebarData = [
     title: "Albums",
     path: "/albums",
     icon: <BiIcons.BiAlbum size={24} />,
+  },
+  {
+    title: "Names",
+    path: "/names",
+    icon: <BsIcons.BsPeopleCircle size={24} />,
   },
 ];

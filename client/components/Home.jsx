@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='home_container'>
       <div className='home_content'>
-        <h1>This is the Homepage</h1>
+        <h1>Welcome</h1>
         <img src={DenoMilkTea} alt='Deno Drinking Milk Tea' />
       </div>
     </div>

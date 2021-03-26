@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
-const cors = require('cors');
+const path = require("path");
+const cors = require("cors");
 
 // import routes
-
+const showRouter = require("./routes/showRouter");
 
 app.use(cors());
 
@@ -15,19 +15,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
-
+app.use("/list", showRouter);
 // bad route error handling
 app.use((req, res) => {
-  console.log('we are in a bad route');
+  console.log("we are in a bad route");
   res.sendStatus(418);
 });
 
 // global error handler
 app.use((err, req, res, next) => {
   const defaultErr = {
-    log: 'Express error handler caught unknown middleware error',
+    log: "Express error handler caught unknown middleware error",
     status: 500,
-    message: { err: 'An error occurred' },
+    message: { err: "An error occurred" },
   };
   const errorObj = Object.assign({}, defaultErr, err);
   console.log(errorObj.log);
