@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Albums from "./containers/Albums";
 import NavBar from "./components/resuables/Nav";
 import Names from "./containers/Names";
+import Crud from "./containers/Crud";
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           </Route>
           <Route path='/names'>
             <Names />
+          </Route>
+          <Route path='/crud'>
+            <Crud />
           </Route>
         </Switch>
       </Router>

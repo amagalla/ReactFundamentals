@@ -1,0 +1,46 @@
+.crud_container {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.crud_title {
+  text-align: center;
+}
+
+.form_container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form_container input[type="text"] {
+  display: block;
+  margin: auto;
+}
+
+.form_container input[type="submit"] {
+  margin-top: 1rem;
+}
+
+.list_data_container {
+  margin-top: 3rem;
+}
+
+.list_data_item {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_data_item p {
+  display: inline;
+  font-size: 2rem;
+}
+
+.list_data_item button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50em;
+  margin-left: 2rem;
+}
