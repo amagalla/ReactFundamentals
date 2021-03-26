@@ -62,7 +62,6 @@ const Crud = () => {
   return (
     <>
       <div>
-        (
         <div className='crud_container'>
           <div className='crud_title'>
             <h1>Crud App</h1>
@@ -80,7 +79,6 @@ const Crud = () => {
           </div>
           <div className='list_data_container'>{resData}</div>
         </div>
-        )
       </div>
     </>
   );
