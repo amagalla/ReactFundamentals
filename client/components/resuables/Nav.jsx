@@ -19,11 +19,13 @@ const Nav = () => {
     history.push(path);
   };
 
-  console.log(navToggle);
-
   const sideData = SidebarData.map((item, i) => {
     return (
-      <div className='sidebar_item' onClick={() => sideDataClick(item.path)}>
+      <div
+        key={i}
+        className='sidebar_item'
+        onClick={() => sideDataClick(item.path)}
+      >
         <p>{item.title}</p>
         {item.icon}
       </div>

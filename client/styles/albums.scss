@@ -1,0 +1,34 @@
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.albums_title {
+  margin-top: 3rem;
+  @include flexBox();
+}
+
+.input_container {
+  margin-top: 2rem;
+  @include flexBox();
+}
+
+.display_albums_container {
+  border: 1px solid;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 40rem;
+  margin: auto;
+  margin-top: 2rem;
+  overflow: auto;
+  overflow-y: scroll;
+  @include flexBox();
+  align-items: initial;
+}
+
+.album_items {
+  width: 10rem;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
-import AnotherPage from "./components/AnotherPage";
+import Albums from "./containers/Albums";
 import NavBar from "./components/resuables/Nav";
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/another'>
-            <AnotherPage />
+          <Route path='/albums'>
+            <Albums />
           </Route>
         </Switch>
       </Router>
