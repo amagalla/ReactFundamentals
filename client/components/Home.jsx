@@ -5,8 +5,10 @@ import DenoMilkTea from "../assets/denoMilkTea.gif";
 const Home = () => {
   return (
     <div className='home_container'>
-      <h1>This is the Homepage</h1>
-      <img src={DenoMilkTea} alt='Deno Drinking Milk Tea' />
+      <div className='home_content'>
+        <h1>This is the Homepage</h1>
+        <img src={DenoMilkTea} alt='Deno Drinking Milk Tea' />
+      </div>
     </div>
   );
 };

@@ -1,12 +1,13 @@
 .home_container {
-  width: 80%;
-  height: 30rem;
-  margin: auto;
-  text-align: center;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.home_content {
+  text-align: center;
+  margin-top: -10rem;
 }
 
 .home_container img {
