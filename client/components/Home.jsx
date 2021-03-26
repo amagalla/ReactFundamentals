@@ -1,10 +1,12 @@
 import React from "react";
 import "../styles/home.scss";
+import DenoMilkTea from "../assets/denoMilkTea.gif";
 
 const Home = () => {
   return (
     <div className='home_container'>
-      <p>This is the Homepage</p>
+      <h1>This is the Homepage</h1>
+      <img src={DenoMilkTea} alt='Deno Drinking Milk Tea' />
     </div>
   );
 };

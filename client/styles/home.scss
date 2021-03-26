@@ -1,6 +1,16 @@
 .home_container {
   width: 80%;
+  height: 30rem;
   margin: auto;
-  margin-top: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_container img {
+  width: 25rem;
+  height: auto;
+  margin-top: 2rem;
 }
