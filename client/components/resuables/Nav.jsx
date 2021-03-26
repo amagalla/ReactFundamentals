@@ -40,6 +40,9 @@ const Nav = () => {
       <div className='nav_webpage_icon'>
         <IoIcons.IoLogoOctocat size={32} />
       </div>
+      <div className='nav_title'>
+        <p>React Fundamentals</p>
+      </div>
       <div
         className={navToggle ? "sidebar_container active" : "sidebar_container"}
       >

@@ -25,43 +25,18 @@
   height: 100vh;
   width: 10rem;
   transition: 400ms;
-  /*
-  animation: sidebar-retrack;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  */
 }
 
-/*
-@keyframes sidebar-retrack {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -17%;
-  }
+.nav_title {
+  font-size: 25px;
+  margin: auto;
 }
-*/
+
 .sidebar_container.active {
-  /*
-  animation: sidebar;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  */
   left: 0;
   transition: 400ms;
 }
 
-/*
-@keyframes sidebar {
-  0% {
-    left: -17%;
-  }
-  100% {
-    left: 0;
-  }
-}
-*/
 .items_container {
   margin-top: 3rem;
 }
