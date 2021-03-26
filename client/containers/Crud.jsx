@@ -77,7 +77,11 @@ const Crud = () => {
               <input type='submit' />
             </form>
           </div>
-          <div className='list_data_container'>{resData}</div>
+          {requestedItem.length > 0 ? (
+            <div className='list_data_container'>{resData}</div>
+          ) : (
+            <div className='loading_crud'>Loading...</div>
+          )}
         </div>
       </div>
     </>
