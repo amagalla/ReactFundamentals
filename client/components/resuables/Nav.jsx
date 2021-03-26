@@ -23,7 +23,7 @@ const Nav = () => {
     return (
       <div
         key={i}
-        className='sidebar_item'
+        className="sidebar_item"
         onClick={() => sideDataClick(item.path)}
       >
         <p>{item.title}</p>
@@ -33,25 +33,25 @@ const Nav = () => {
   });
 
   return (
-    <div className='nav_container'>
-      <div className='burger_icon_container'>
+    <div className="nav_container">
+      <div className="burger_icon_container">
         <GiIcons.GiHamburgerMenu size={32} onClick={handleClick} />
       </div>
-      <div className='nav_webpage_icon'>
+      <div className="nav_webpage_icon">
         <IoIcons.IoLogoOctocat size={32} />
       </div>
-      <div className='nav_title'>
+      <div className="nav_title">
         <p>React Fundamentals</p>
       </div>
       <div
         className={navToggle ? "sidebar_container active" : "sidebar_container"}
       >
-        <div className='close_nav_icon'>
+        <div className="close_nav_icon">
           <span>
             <AiIcons.AiOutlineClose size={32} onClick={handleClick} />
           </span>
         </div>
-        <div className='items_container' onClick={handleClick}>
+        <div className="items_container" onClick={handleClick}>
           {sideData}
         </div>
       </div>

@@ -1,9 +1,6 @@
 import React from "react";
 import "../../styles/albums.scss";
 
-// thumbnailUrl
-// title
-
 const DisplayAlbums = ({ searchInput, albumData }) => {
   const albums = albumData
     .filter((element) => {

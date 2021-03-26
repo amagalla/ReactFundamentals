@@ -52,7 +52,7 @@ const Crud = () => {
   // map through reponse from getting data
   const resData = requestedItem.map((el, i) => {
     return (
-      <div className='list_data_item' key={i}>
+      <div className="list_data_item" key={i}>
         <p>{el.show}</p>
         <button onClick={() => handleClick(el.id)}>X</button>
       </div>
@@ -62,25 +62,25 @@ const Crud = () => {
   return (
     <>
       <div>
-        <div className='crud_container'>
-          <div className='crud_title'>
+        <div className="crud_container">
+          <div className="crud_title">
             <h1>Crud App</h1>
           </div>
-          <div className='form_container'>
+          <div className="form_container">
             <form onSubmit={handleSubmit}>
               <input
-                type='text'
+                type="text"
                 value={inputItem || ""}
                 onChange={handleChange}
                 required
               />
-              <input type='submit' />
+              <input type="submit" />
             </form>
           </div>
           {requestedItem.length > 0 ? (
-            <div className='list_data_container'>{resData}</div>
+            <div className="list_data_container">{resData}</div>
           ) : (
-            <div className='loading_crud'>Loading...</div>
+            <div className="loading_crud">Loading...</div>
           )}
         </div>
       </div>

@@ -3,7 +3,7 @@ import "../../styles/albums.scss";
 
 const AlbumsTitle = () => {
   return (
-    <div className='albums_title'>
+    <div className="albums_title">
       <h1>Search Albums</h1>
     </div>
   );

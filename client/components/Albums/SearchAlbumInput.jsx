@@ -7,8 +7,8 @@ const SearchAlbums = (props) => {
   };
 
   return (
-    <div className='input_container'>
-      <input type='text' placeholder='Search...' onChange={handleChange} />
+    <div className="input_container">
+      <input type="text" placeholder="Search..." onChange={handleChange} />
     </div>
   );
 };

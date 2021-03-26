@@ -12,16 +12,16 @@ const App = () => {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path='/albums'>
+          <Route path="/albums">
             <Albums />
           </Route>
-          <Route path='/names'>
+          <Route path="/names">
             <Names />
           </Route>
-          <Route path='/crud'>
+          <Route path="/crud">
             <Crud />
           </Route>
         </Switch>

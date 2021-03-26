@@ -29,7 +29,7 @@ const InputNames = () => {
 
   const names = displayName.map((el, i) => {
     return (
-      <div className='name_item' key={i}>
+      <div className="name_item" key={i}>
         <p>
           {el.firstname} {el.lastname}
         </p>
@@ -40,25 +40,25 @@ const InputNames = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className='input_names_container'>
+        <div className="input_names_container">
           <input
-            type='text'
-            placeholder='Firstname...'
-            name='firstname'
+            type="text"
+            placeholder="Firstname..."
+            name="firstname"
             value={personName.firstname}
             onChange={handleChange}
           />
           <input
-            type='text'
-            placeholder='Lastname...'
-            name='lastname'
+            type="text"
+            placeholder="Lastname..."
+            name="lastname"
             value={personName.lastname}
             onChange={handleChange}
           />
-          <input type='submit' />
+          <input type="submit" />
         </div>
       </form>
-      <div className='names_container'>{names}</div>
+      <div className="names_container">{names}</div>
     </>
   );
 };
