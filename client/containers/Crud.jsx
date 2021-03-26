@@ -75,6 +75,7 @@ const Crud = () => {
                   type='text'
                   value={inputItem || ""}
                   onChange={handleChange}
+                  required
                 />
                 <input type='submit' />
               </form>
