@@ -5,6 +5,7 @@ import Albums from "./containers/Albums";
 import NavBar from "./components/resuables/Nav";
 import Names from "./containers/Names";
 import Crud from "./containers/Crud";
+import CSSChallenge from "./containers/CSSChallenge";
 
 const App = () => {
   return (
@@ -12,17 +13,20 @@ const App = () => {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route path="/albums">
+          <Route path='/albums'>
             <Albums />
           </Route>
-          <Route path="/names">
+          <Route path='/names'>
             <Names />
           </Route>
-          <Route path="/crud">
+          <Route path='/crud'>
             <Crud />
+          </Route>
+          <Route path='/css-challenge'>
+            <CSSChallenge />
           </Route>
         </Switch>
       </Router>

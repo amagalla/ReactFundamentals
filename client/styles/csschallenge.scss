@@ -1,0 +1,27 @@
+.overall-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 350px;
+  height: 350px;
+  background-color: lightblue;
+  /* CSS goes here */
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+/* don't change anything below */
+.main-container > * {
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
+}
